@@ -4,7 +4,7 @@ export default class Sor{
         console.log(adat);
         this.#adat = adat;
         this.szuloElem = szuloElem;
-        this.kukaz();
+        this.sorkiir();
         this.kukaElem = $(".kuka:last"); // hozzáfér a kukához hogy töröljek az eseménykezelővel 
         this.kattintasEsemeny();
     }
@@ -17,7 +17,7 @@ export default class Sor{
         })
     }
 
-    kukaz(){
+    sorkiir(){
         this.szuloElem.append(
             `<tr>
                 <td>${this.#adat.elnevezes}</td>
